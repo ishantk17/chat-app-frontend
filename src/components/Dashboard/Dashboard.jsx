@@ -10,15 +10,13 @@ import './Dashboard.css'
 function Dashboard() {
   const [isOpen,setIsOpen]=useState(true);
   const [clientMessage,setClientMessage]=useState(["hello"]);
-  // const handleClick=()=>{
-  //   setIsOpen(!isOpen);
-  // }
+
   return (
     <div className='Dashboard'>
         <Navbar/>
-        {(isOpen)?(<Video clientMessage={clientMessage} setClientMessage={setClientMessage}/>):(<Chat clientMessages={clientMessage} isOpen={isOpen} setIsOpen={setIsOpen}/>)}
+        {(isOpen)?(<Video clientMessage={clientMessage} setClientMessage={setClientMessage} isOpen={isOpen} setIsOpen={setIsOpen}/>):(<Chat clientMessages={clientMessage} isOpen={isOpen} setIsOpen={setIsOpen}/>)}
         <div className="lower">
-           {(!isOpen)?(<Video clientMessage={clientMessage} setClientMessage={setClientMessage}/>):(<Chat clientMessages={clientMessage} isOpen={isOpen} setIsOpen={setIsOpen}/>)}
+           {(!isOpen)?(<Video clientMessage={clientMessage} setClientMessage={setClientMessage} isOpen={isOpen} setIsOpen={setIsOpen}/>):(<Chat clientMessages={clientMessage} isOpen={isOpen} setIsOpen={setIsOpen}/>)}
            <div className="pauseIcon">
               <LuPause className='pausebtn'/>
            </div>

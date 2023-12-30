@@ -10,7 +10,7 @@ function Chat({clientMessages,isOpen,setIsOpen}) {
     setIsOpen(!isOpen);
   }
   return (
-    <div className='chatSection'>
+    <div className={(isOpen)?'chatSection ' : 'off-chatSection'}>
         <div className="chat">
           <div className="upper">
             <div className="clientMessage">
@@ -21,11 +21,13 @@ function Chat({clientMessages,isOpen,setIsOpen}) {
             </div>
             <div className="serverMessage">
                 <p>This is Server message</p>
+                <p>This is Server message</p>
+                <p>This is Server message</p>
             </div>
           </div>
           {(isOpen) &&
-          <div className='chatIcon'>
-              <BsChatLeftFill className="chatBtn" onClick={handleClick}/>
+          <div className='chatIcon' onClick={handleClick}>
+              <BsChatLeftFill className="chatBtn" />
           </div>}
         </div> 
         {(!isOpen) &&

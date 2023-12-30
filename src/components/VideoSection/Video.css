@@ -1,4 +1,4 @@
-#videoComp{
+.videoComp{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -13,9 +13,30 @@
   backdrop-filter: blur(55px);
   margin-bottom: 50px;
 }
+.off-videocomp{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+  height:35vh;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin:2rem;
+  padding: 1rem;
+  background-color: transparent;
+  backdrop-filter: blur(55px);
+  box-sizing: border-box;
+}
 .video video{
   height: 30vh;
   width: 30vw;
+  border-radius: 24px;
+  border: 5px solid var(--Pure-White, #FFF);
+}
+.off-video video{
+  height: 25vh;
+  width: 25vw;
   border-radius: 24px;
   border: 5px solid var(--Pure-White, #FFF);
 }
@@ -99,18 +120,26 @@
 .mic .microphone {
   transition: color 0.5s ease-in;
 }
-/* .microphone {
-  
-  color: white;
+.off-mic{
+  display: none;
 }
-
-.listening .microphone {
-
-  background: #189BFF;
-  border: 5px solid #189BFF;
+.camera-icon{
+  border: 2px solid #189BFF;
+  padding: 28px;
+  background-color: #189BFF;
   border-radius: 50%;
-  animation: pulsate infinite 1.5s;
-} */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+  margin-right: 1rem;
+  
+}
+.camera-btn{
+  font-size: 48px;
+  color: white;
+  
+}
 
 
 

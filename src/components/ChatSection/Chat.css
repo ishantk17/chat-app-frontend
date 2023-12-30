@@ -13,6 +13,20 @@
     backdrop-filter: blur(55px);
     box-sizing: border-box;
 }
+.off-chatSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    height: 35vh;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin:2rem;
+    padding: 1rem;
+    background-color: transparent;
+    backdrop-filter: blur(55px);
+}
 .lowerDiv{
     display: flex;
     flex-direction: row;
